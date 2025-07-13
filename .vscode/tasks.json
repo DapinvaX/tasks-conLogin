@@ -1,0 +1,37 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Iniciar Backend (NestJS)",
+			"type": "shell",
+			"command": "cd tasks-backend-nestjs && npm run start:dev",
+			"group": "build",
+			"isBackground": true,
+			"problemMatcher": []
+		},
+		{
+			"label": "Iniciar Frontend (Angular)",
+			"type": "shell",
+			"command": "cd tasks-frontend-angular && ng serve",
+			"group": "build",
+			"isBackground": true,
+			"problemMatcher": []
+		},
+		{
+			"label": "Instalar dependencias Backend",
+			"type": "shell",
+			"command": "cd tasks-backend-nestjs && npm install",
+			"group": "build",
+			"isBackground": false,
+			"problemMatcher": []
+		},
+		{
+			"label": "Instalar dependencias Frontend",
+			"type": "shell",
+			"command": "cd tasks-frontend-angular && npm install",
+			"group": "build",
+			"isBackground": false,
+			"problemMatcher": []
+		}
+	]
+}

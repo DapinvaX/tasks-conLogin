@@ -900,12 +900,11 @@ tasks-conLogin/
             ├── 📂 guards/ (auth, no-auth)
             ├── 📂 interceptors/ (auth)
             ├── 📂 models/ (interfaces completas)
-            ├── 📂 tests/ (integration tests)
-            └── 📂 environments/
+            └── 📂 tests/ (integration tests)
 ```
 
 ---
 
-*Desarrollado con ❤️ usando Angular + NestJS + MySQL + JWT Authentication*
+*Desarrollado usando Angular + NestJS + MySQL + JWT Authentication*
 
 **Características destacadas**: Autenticación completa, gestión de usuarios, protección de rutas, testing exhaustivo, interfaz responsive, y arquitectura escalable.

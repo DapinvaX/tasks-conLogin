@@ -25,7 +25,8 @@ Una aplicación completa de gestión de tareas desarrollada con **Angular** (fro
 
 #### ✅ **Registro de Usuarios**
 - **Formulario completo**: Nombre, apellido, email, nombre de usuario, contraseña
-- **Preguntas de seguridad**: 4 preguntas predefinidas para recuperación de contraseña
+- **Preguntas de seguridad**
+: 4 preguntas predefinidas para recuperación de contraseña
 - **Validaciones robustas**: Email único, nombre de usuario único, validaciones de longitud
 - **Hash seguro**: Contraseñas y respuestas de seguridad hasheadas con bcrypt
 - **JWT automático**: Generación de token JWT al registrarse
@@ -829,28 +830,6 @@ ng e2e
   - [x] JWT tokens seguros
   - [x] Validación de entrada
   - [x] Protección CORS
-
-### 🔄 **Próximas Mejoras Sugeridas**
-- [ ] **Funcionalidades avanzadas**
-  - [ ] Categorías/etiquetas de tareas
-  - [ ] Filtros y búsqueda avanzada
-  - [ ] Notificaciones push
-  - [ ] Recordatorios por email
-- [ ] **Mejoras de productividad**
-  - [ ] Drag & drop de tareas
-  - [ ] Bulk operations (selección múltiple)
-  - [ ] Templates de tareas
-  - [ ] Export/Import datos
-- [ ] **Deployment y DevOps**
-  - [ ] Docker Compose completo
-  - [ ] CI/CD pipelines
-  - [ ] Deployment a cloud (AWS/Azure)
-  - [ ] Monitoring y logs
-- [ ] **Performance y UX**
-  - [ ] PWA (Progressive Web App)
-  - [ ] Caching inteligente
-  - [ ] Paginación de tareas
-  - [ ] Optimización de búsquedas
 
 ---
 

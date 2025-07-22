@@ -172,12 +172,39 @@
   transition: all 0.2s ease;
 }
 
+/* Eliminar efecto de círculo (ripple) en botones */
+.action-button .mat-mdc-button-ripple,
+.action-button .mat-ripple,
+.action-button .mat-mdc-button-persistent-ripple {
+  display: none !important;
+}
+
+.action-button .mdc-button__ripple {
+  display: none !important;
+}
+
+/* Estilos para botón de editar */
+
+
 .edit-button:hover {
-  background-color: rgba(25, 118, 210, 0.1);
+  background-color: rgba(25, 118, 210, 0.8) !important;
+}
+
+.edit-button:hover mat-icon {
+  color: #ffffff !important;
+}
+
+/* Estilos para botón de eliminar */
+.delete-button mat-icon {
+  color: #f44336 !important;
 }
 
 .delete-button:hover {
-  background-color: rgba(244, 67, 54, 0.1);
+  background-color: rgba(244, 67, 54, 0.8) !important;
+}
+
+.delete-button:hover mat-icon {
+  color: #ffffff !important;
 }
 
 .completar-checkbox {
@@ -260,6 +287,15 @@
   border-color: #1976d2 !important;
 }
 
+.action-button.edit-button mat-icon{
+  color: rgba(30, 120, 255, 0.8) !important;
+}
+
+.action-button.edit-button:hover mat-icon{
+  color: white !important;
+}
+
+/* Estilos para tema oscuro */
 [data-theme="dark"] .mat-checkbox-checked .mat-checkbox-background, [data-theme="dark"] .mat-checkbox-checkmark {
   background: #53c94f !important;
   color: #53c94f !important;
@@ -329,14 +365,69 @@
 
 /* Botones con mejor contraste en tema oscuro */
 [data-theme="dark"] .action-button {
-  background-color: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  background-color: transparent !important;
+  border: none !important;
   transition: all 0.2s ease;
 }
 
 [data-theme="dark"] .action-button:hover {
   background-color: rgba(255, 255, 255, 0.1);
   border-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Estilos para botón de editar en tema oscuro */
+[data-theme="dark"] .edit-button {
+  background-color: transparent !important;
+  border: none !important;
+}
+
+[data-theme="dark"] .edit-button mat-icon {
+  color: #ef5350 !important;
+}
+
+[data-theme="dark"] .action-button.edit-button {
+  background-color: transparent !important;
+  border:(141, 146, 153, 0.8) !important;
+
+}
+
+[data-theme="dark"] .action-button.edit-button mat-icon {
+  color: rgba(30, 120, 255, 0.8) !important;
+}
+
+
+[data-theme="dark"] .edit-button:hover mat-icon {
+  color:#ffffff !important;
+}
+
+[data-theme="dark"] .action-button.edit-button:hover {
+  background-color: rgba(30, 120, 255, 0.8) !important;
+
+}
+
+
+[data-theme="dark"] .action-button:hover mat-button-ripple.edit-button {
+  background-color: rgba(30, 120, 255, 0.8) !important;
+  border-color: transparent !important;
+}
+
+/* Estilos para botón de eliminar en tema oscuro */
+[data-theme="dark"] .delete-button {
+  background-color: transparent !important;
+  border: none !important;
+}
+
+[data-theme="dark"] .delete-button mat-icon {
+  color: #ef5350 !important;
+}
+
+[data-theme="dark"] .delete-button:hover {
+  background-color: rgba(244, 67, 54, 0.8) !important;
+  border-color: transparent !important;
+}
+
+[data-theme="dark"] .delete-button:hover mat-icon {
+  color: #ffffff !important;
 }
 
 /* FORZAR ESTILOS PARA TARJETAS - MÁXIMA ESPECIFICIDAD */

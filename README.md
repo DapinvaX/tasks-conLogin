@@ -1071,7 +1071,6 @@ tasks-conLogin/
 ├── 🖥️ tasks-backend-nestjs/
 │   ├── 📦 package.json
 │   ├── 🔧 tsconfig.json, nest-cli.json, eslint.config.mjs
-│   ├── 🐳 Dockerfile, fly.toml
 │   ├── � .env.example (NO subir .env real)
 │   ├── 🗄️ db/ (scripts SQL)
 │   ├── 🗄️ prisma/ (schema, migrations, seed)

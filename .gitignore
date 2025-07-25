@@ -1,6 +1,9 @@
 #README.md
 README.md
 
+#Configuración VSCode
+.vscode/
+
 # Environment variables - NUNCA subir al repositorio
 .env
 .env.*

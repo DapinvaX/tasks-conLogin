@@ -8,7 +8,7 @@ import { environment } from '../../environments/environment';
   providedIn: 'root'
 })
 export class TareasService {
-  private apiUrl = environment.apiUrl;
+  private apiUrl = `${environment.apiUrl}/tareas`;
 
   constructor(private http: HttpClient) { }
 

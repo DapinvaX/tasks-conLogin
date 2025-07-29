@@ -19,7 +19,7 @@ export class TareasService {
           select: {
             id: true,
             nombre: true,
-            apellido: true,
+            apellidos: true,
             email: true,
           },
         },
@@ -35,7 +35,7 @@ export class TareasService {
           select: {
             id: true,
             nombre: true,
-            apellido: true,
+            apellidos: true,
             email: true,
           },
         },
@@ -54,7 +54,7 @@ export class TareasService {
           select: {
             id: true,
             nombre: true,
-            apellido: true,
+            apellidos: true,
             email: true,
           },
         },
@@ -85,7 +85,7 @@ export class TareasService {
             select: {
               id: true,
               nombre: true,
-              apellido: true,
+              apellidos: true,
               email: true,
             },
           },

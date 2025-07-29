@@ -22,8 +22,8 @@ export class RegisterDto {
 
   @IsString()
   @IsNotEmpty()
-  @MaxLength(50)
-  apellido: string;
+  @MaxLength(100)
+  apellidos: string;
 
   @IsString()
   @IsNotEmpty()

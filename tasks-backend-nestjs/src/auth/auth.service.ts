@@ -16,7 +16,7 @@ export class AuthService {
   ) {}
 
   async register(registerDto: RegisterDto) {
-    const { email, nombreUsuario, password, nombre, apellido, preguntaSeguridad, respuestaSeguridad } = registerDto;
+    const { email, nombreUsuario, password, nombre, apellidos, preguntaSeguridad, respuestaSeguridad } = registerDto;
 
     // Verificar si el usuario ya existe (por email o nombre de usuario)
     const existingUser = await this.prisma.usuario.findFirst({
@@ -48,7 +48,7 @@ export class AuthService {
         nombreUsuario,
         password: hashedPassword,
         nombre,
-        apellido,
+        apellidos,
         preguntaSeguridad,
         respuestaSeguridad: hashedSecurityAnswer,
       },
@@ -57,7 +57,7 @@ export class AuthService {
         email: true,
         nombreUsuario: true,
         nombre: true,
-        apellido: true,
+        apellidos: true,
       },
     });
 
@@ -96,7 +96,7 @@ export class AuthService {
         id: user.id,
         email: user.email,
         nombre: user.nombre,
-        apellido: user.apellido,
+        apellidos: user.apellido,
       },
     };
   }
@@ -108,7 +108,7 @@ export class AuthService {
         id: true,
         email: true,
         nombre: true,
-        apellido: true,
+        apellidos: true,
       },
     });
   }

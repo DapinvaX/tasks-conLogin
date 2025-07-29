@@ -48,7 +48,7 @@ export class RegisterComponent implements OnInit {
   ngOnInit(): void {
     this.registerForm = this.fb.group({
       nombre: ['', [Validators.required, Validators.maxLength(50)]],
-      apellido: ['', [Validators.required, Validators.maxLength(50)]],
+      apellidos: ['', [Validators.required, Validators.maxLength(100)]],
       email: ['', [Validators.required, Validators.email]],
       nombreUsuario: ['', [Validators.required, Validators.minLength(3), Validators.maxLength(20)]],
       password: ['', [Validators.required, Validators.minLength(6)]],
@@ -92,7 +92,7 @@ export class RegisterComponent implements OnInit {
     if (control?.hasError('required')) {
       const fieldNames: { [key: string]: string } = {
         nombre: 'Nombre',
-        apellido: 'Apellido',
+        apellidos: 'Apellidos',
         email: 'Email',
         nombreUsuario: 'Nombre de usuario',
         password: 'Contraseña',
@@ -115,8 +115,8 @@ export class RegisterComponent implements OnInit {
     if (control?.hasError('maxlength')) {
       const maxLengths: { [key: string]: number } = {
         nombre: 50,
-        apellido: 50,
-        nombreUsuario: 20
+        apellidos: 200,
+        nombreUsuario: 50
       };
       return `Máximo ${maxLengths[field]} caracteres`;
     }

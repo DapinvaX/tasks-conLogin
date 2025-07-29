@@ -23,7 +23,7 @@ async function bootstrap() {
   });
   
   // Obtener configuración
-  const port = configService.get<number>('port') || 4000;
+  const port = 4000;
   const environment = configService.get<string>('environment') || 'development';
   
   // Iniciar la aplicación

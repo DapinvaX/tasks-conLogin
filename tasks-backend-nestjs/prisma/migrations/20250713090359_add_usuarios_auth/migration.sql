@@ -21,3 +21,7 @@ CREATE TABLE `usuarios` (
 
 -- AddForeignKey
 ALTER TABLE `tareas` ADD CONSTRAINT `tareas_usuarioId_fkey` FOREIGN KEY (`usuarioId`) REFERENCES `usuarios`(`id`) ON DELETE CASCADE ON UPDATE CASCADE;
+
+ALTER TABLE `usuarios` ALTER COLUMN (
+    `apellido` VARCHAR(50) NOT NULL
+);
